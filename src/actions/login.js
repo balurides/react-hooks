@@ -11,7 +11,7 @@ function loginReducer(state,action){
         case 'success': {
             return {
                 ...state,
-                loggedin:true,
+                loggedIn:true,
                 isLoading:false
             };
         }

@@ -23,6 +23,7 @@ function LoginV1() {
             await checkUser1({ username , password });
             console.log('test');
             dispatch( { type: 'success' });
+            console.log({ loggedIn });
         } catch (error) {
             dispatch( { type: 'error' });
         }
@@ -66,7 +67,7 @@ function LoginV1() {
         </div>
         
     </div>
-    );
+    )
 }
 
 export default LoginV1;
