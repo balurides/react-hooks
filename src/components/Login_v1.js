@@ -21,6 +21,7 @@ function LoginV1() {
         dispatch( {type: 'login'});
         try {
             await checkUser1({ username , password });
+            console.log('test');
             dispatch( { type: 'success' });
         } catch (error) {
             dispatch( { type: 'error' });
